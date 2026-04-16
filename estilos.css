@@ -149,6 +149,115 @@ span{
 .navbar-link:hover{
     color: #7ABAEA;
 }
+.navbar-toggle{
+    display: none;
+    font-size: 28px;
+    color: #1F1863;
+    cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .navbar{
+        padding: 10px 20px;
+    }
+
+    .navbar-content{
+        justify-content: space-between;
+    }
+
+    .navbar-logo img{
+        width: 60px;
+    }
+
+    .navbar-logo h5{
+        font-size: 14px;
+    }
+
+    .navbar-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+
+        display: none;
+        z-index: 999;
+    }
+
+    .navbar-links.active{
+        display: flex !important;
+    }
+
+    .navbar-toggle{
+        display: block;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .navbar{
+        padding: 10px 30px;
+    }
+
+    .navbar-content{
+        justify-content: space-between;
+    }
+
+    .navbar-logo img{
+        width: 70px;
+    }
+
+    .navbar-logo h5{
+        font-size: 16px;
+    }
+
+    .navbar-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+
+        display: none;
+        z-index: 999;
+    }
+
+    .navbar-links.active{
+        display: flex !important;
+    }
+
+    .navbar-toggle{
+        display: block;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .navbar{
+        padding: 8px 30px;
+    }
+
+    .navbar-links{
+        gap: 15px;
+    }
+
+    .navbar-links a{
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+}
 
 /* --------------------------------------- */
 
@@ -195,6 +304,10 @@ span{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.boton-contacto-redes:hover{
+    transform: translateY(-5px);
 }
 
 /* --------------------------------------- */
@@ -247,6 +360,47 @@ span{
     justify-content: center;
     background-color: #DEE8FF;
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .minihero{
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .minihero h1{
+        font-size: 32px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .minihero{
+        height: 25vh;
+        padding: 0 30px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .minihero h1{
+        font-size: 42px;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .minihero{
+        height: 28vh;
+    }
+
+    .minihero h1{
+        font-size: 50px;
+    }
+}
 
 
 /* --------------------------------------- */
@@ -287,6 +441,68 @@ span{
 .text-animate1.visible{
     opacity: 1;
     transform: translateY(0);
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .section1-content{
+        height: 70vh;
+        padding: 0 20px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .section1-content h1{
+        font-size: 40px;
+    }
+
+    .section1-content h5{
+        font-size: 24px;
+    }
+
+    .section1-content a{
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section1-content{
+        height: 75vh;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .section1-content h1{
+        font-size: 36px;
+    }
+
+    .section1-content h5{
+        font-size: 18px;
+    }
+
+    .section1-content a{
+        font-size: 15px;
+        padding: 12px 18px;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .section1-content{
+        height: 80vh;
+    }
+
+    .section1-content h1{
+        font-size: 48px;
+    }
+
+    .section1-content h5{
+        font-size: 20px;
+    }
 }
 
 /* --------------------------------------- */
@@ -345,6 +561,111 @@ span{
     opacity: 1;
     transform: translateX(0); 
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .section2{
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .section2-content{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .section2-image{
+        width: 100%;
+        padding: 0;
+    }
+
+    .section2-image img{
+        height: 250px;
+    }
+
+    .section2-text{
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .section2-text h5{
+        font-size: 20px;
+    }
+
+    .section2-text p{
+        font-size: 18px;
+    }
+
+    .link-document{
+        font-size: 20px;
+    }
+
+    .section2-text a.boton1{
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section2{
+        padding: 0 30px;
+    }
+
+    .section2-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section2-image{
+        width: 100%;
+        padding: 0;
+    }
+
+    .section2-image img{
+        height: 400px;
+        object-position: cover;
+    }
+
+    .section2-text{
+        width: 100%;
+        padding: 0;
+        gap: 18px;
+    }
+
+    .section2-text h5{
+        font-size: 18px;
+    }
+
+    .section2-text p{
+        font-size: 15px;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .section2{
+        padding: 0 30px;
+    }
+
+    .section2-image{
+        width: 45%;
+        padding: 0 20px;
+    }
+
+    .section2-text{
+        width: 55%;
+        padding: 0 20px;
+    }
+
+    .section2-image img{
+        height: 520px;
+    }
+}
 
 /* --------------------------------------- */
 
@@ -386,6 +707,81 @@ span{
 }
 .section3-titulo h6{
     color: #294B95;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .section3{
+        padding: 30px 20px;
+    }
+
+    .section3-content{
+        width: 100%;
+        padding: 15px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .section3-valor{
+        width: 100%;
+    }
+
+    .section3-valor img{
+        width: 100%;
+    }
+
+    .section3-titulo p{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section3{
+        padding: 40px 40px;
+    }
+
+    .section3-content{
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .section3-valor{
+        width: 100%;
+    }
+
+    .section3-valor img{
+        width: 90%;
+    }
+
+    .section3-titulo p{
+        text-align: center;
+    }
+    
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .section3{
+        padding: 30px 60px;
+    }
+
+    .section3-content{
+        width: 90%;
+        gap: 10px;
+    }
+
+    .section3-valor img{
+        width: 70%;
+    }
 }
 
 /* --------------------------------------- */
@@ -446,6 +842,112 @@ span{
     align-items: center;
     gap: 25px;
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .section4{
+        padding: 0 20px;
+    }
+
+    .section4-content{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .section4-text{
+        padding: 0;
+        width: 100%;
+        gap: 12px;
+        order: 2;
+    }
+
+    .section4-text p{
+        font-size: 18px;
+    }
+
+    .section4-image{
+        padding: 0;
+        width: 100%;
+        order: 1;
+    }
+
+    .section4-image img{
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .section4-botones{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section4-botones a{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section4{
+        padding: 0 30px;
+    }
+
+    .section4-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section4-text{
+        padding: 0;
+        width: 100%;
+        order: 2;
+    }
+
+    .section4-text p{
+        font-size: 15px;
+    }
+
+    .section4-image{
+        padding: 0;
+        width: 100%;
+        order: 1;
+    }
+
+    .section4-image img{
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .section4-botones{
+        gap: 15px;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .section4{
+        padding: 0 30px;
+    }
+
+    .section4-text{
+        width: 55%;
+        padding: 0 20px;
+    }
+
+    .section4-image{
+        width: 45%;
+        padding: 0 20px;
+    }
+
+    .section4-image img{
+        height: 500px;
+        object-fit: cover;
+    }
+}
 
 /* --------------------------------------- */
 
@@ -482,6 +984,10 @@ span{
     gap: 10px;
     color: #1F1863;
 }
+.section5-square:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
 .section5-image{
     width: 100%;
     display: flex;
@@ -500,6 +1006,62 @@ span{
 }
 .section5-text h6{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .section5{
+        padding: 0 20px;
+    }
+
+    .section5-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section5-square{
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .section5-text h6{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section5{
+        padding: 0 30px;
+    }
+
+    .section5-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .section5-square{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .section5{
+        padding: 0 30px;
+    }
+
+    .section5-content{
+        gap: 20px;
+    }
+
+    .section5-square{
+        max-width: 320px;
+        padding: 18px;
+    }
 }
 
 /* --------------------------------------- */
@@ -541,6 +1103,66 @@ span{
 }
 .section6-titulo h6{
     color: #DEE8FF;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .section6{
+        height: auto;
+        padding: 50px 20px;
+        background-attachment: scroll;
+    }
+
+    .section6-content p{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .section6-titulo h2{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .section6-titulo h6{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section6{
+        height: auto;
+        padding: 60px 30px;
+        background-attachment: scroll;
+    }
+
+    .section6-content p{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .section6-titulo h2{
+        text-align: center;
+    }
+
+    .section6-titulo h6{
+        text-align: center;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .section6{
+        height: 55vh;
+        padding: 30px;
+    }
+
+    .section6-content p{
+        width: 70%;
+    }
 }
 
 /* --------------------------------------- */
@@ -592,6 +1214,7 @@ span{
     max-width: 300px;
     height: 350px;
     border-radius: 10px;
+    object-fit: cover;
 }
 .persona-text{
     width: 100%;
@@ -607,7 +1230,51 @@ span{
 .persona-text h6{
     color: #294B95;
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
 
+    .section7{
+        padding: 0 20px;
+    }
+
+    .section7-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .section7-persona{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .persona-image img{
+        height: 280px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section7{
+        padding: 0 30px;
+    }
+
+    .section7-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .section7-persona{
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .persona-image img{
+        height: 320px;
+    }
+}
 /* --------------------------------------- */
 
 /* ---------- SECTION 8 ---------- */
@@ -639,6 +1306,7 @@ span{
 .section8-mapa iframe{
     width: 100%;
     height: 550px;
+    border-radius: 10px;
 }
 .section8-contacto{
     width: 70%;
@@ -656,6 +1324,81 @@ span{
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .section8{
+        padding: 0 20px;
+    }
+
+    .section8-mapa{
+        width: 100%;
+    }
+
+    .section8-mapa iframe{
+        height: 300px;
+    }
+
+    .section8-contacto{
+        width: 100%;
+    }
+
+    .section8-telefono{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .section8-telefono h6{
+        font-size: 20px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .section8{
+        padding: 0 30px;
+    }
+
+    .section8-mapa{
+        width: 100%;
+    }
+
+    .section8-mapa iframe{
+        height: 400px;
+    }
+
+    .section8-contacto{
+        width: 90%;
+    }
+
+    .section8-telefono{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .section8{
+        padding: 0 40px;
+    }
+
+    .section8-mapa iframe{
+        height: 500px;
+    }
+
+    .section8-contacto{
+        width: 90%;
+        white-space: nowrap;
+        
+    }
+    .section8-telefono h6{
+        font-size: 18px;
+    }
 }
 
 /* --------------------------------------- */
@@ -680,7 +1423,7 @@ span{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 40px; 
+    gap: 40px;
 }
 .footer-content h6{
     color: #1F1863;
@@ -708,6 +1451,9 @@ span{
 .footer-column a{
     text-decoration: none;
     color: black;
+}
+.footer-column a:hover{
+    color: #294B95;
 }
 .linea{
     width: 85%;
@@ -750,6 +1496,125 @@ span{
 }
 .texto-horario{
     text-align: justify;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .footer-logo{
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-column{
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-contact{
+        align-items: center;
+    }
+
+    .footer-redes{
+        justify-content: center;
+    }
+    .texto-horario{
+        text-align: center;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom-column1,
+    .footer-bottom-column2{
+        justify-content: center;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .footer-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo{
+        grid-column: span 2;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        margin-top: 10px;
+        order: 99;
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom-column1,
+    .footer-bottom-column2{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+
+    .footer-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo{
+        grid-column: span 2;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1201px) and (max-width: 1440px){
+
+    .footer-content{
+        gap: 25px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo img{
+        width: 100px;
+    }
+
+    .footer-column{
+        width: auto;
+        flex: 1;
+        min-width: 160px;
+    }
 }
 
 /* --------------------------------------- */
@@ -804,7 +1669,106 @@ span{
 .sobrenosotros2-text h2{
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
 
+    .sobrenosotros2{
+        padding: 0 20px;
+    }
+
+    .sobrenosotros2-content{
+        padding: 0;
+        gap: 25px;
+    }
+
+    .sobrenosotros2-text,
+    .sobrenosotros2-image{
+        padding: 0;
+    }
+
+    .sobrenosotros2-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .sobrenosotros2-text h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .sobrenosotros2-text p{
+        text-align: justify;
+        text-align-last: left;
+        font-size: 18px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .sobrenosotros2{
+        padding: 0 30px;
+    }
+
+    .sobrenosotros2-content{
+        padding: 0;
+        gap: 30px;
+    }
+
+    .sobrenosotros2-text,
+    .sobrenosotros2-image{
+        padding: 0;
+    }
+
+    .sobrenosotros2-image img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .sobrenosotros2-text h2{
+        text-align: center;
+    }
+
+    .sobrenosotros2-text p{
+        text-align-last: left;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .sobrenosotros2-content{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sobrenosotros2-text{
+        width: 50%;
+        padding: 0 20px;
+        align-items: flex-start;
+    }
+
+    .sobrenosotros2-image{
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .sobrenosotros2-image img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .sobrenosotros2-text h2{
+        text-align: left;
+    }
+
+    .sobrenosotros2-text p{
+        text-align-last: left;
+    }
+}
 /* --------------------------------------- */
 
 /* ---------- SOBRE NOSOTROS 3 ---------- */
@@ -868,6 +1832,92 @@ span{
 .image-animated2.visible{
     opacity: 0.6;
     transform: translateX(0); 
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .sobrenosotros3-row{
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .row-text{
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobrenosotros3-icono{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobrenosotros3-icono i{
+        font-size: 5rem;
+    }
+
+    .row-text p{
+        text-align: justify;
+        text-align-last: left;
+        font-size: 18px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .sobrenosotros3-row{
+        flex-direction: column;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .row-text{
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobrenosotros3-icono{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobrenosotros3-icono i{
+        font-size: 7rem;
+    }
+
+    .row-text p{
+        text-align-last: left;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .sobrenosotros3-row{
+        flex-direction: row;
+        padding: 20px 40px;
+    }
+
+    .row-text{
+        width: 65%;
+    }
+
+    .sobrenosotros3-icono{
+        width: 35%;
+        align-items: center;
+    }
+
+    .sobrenosotros3-icono i{
+        font-size: 9rem;
+    }
 }
 
 /* --------------------------------------- */
@@ -942,6 +1992,87 @@ span{
 .sobrenosotros4-image:hover .boton1 {
     transform: translateY(0);
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .sobrenosotros4{
+        padding: 0 20px;
+    }
+
+    .sobrenosotros4-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sobrenosotros4-column{
+        padding: 0;
+        gap: 10px;
+    }
+
+    .sobrenosotros4-text h3{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .overlay{
+        opacity: 1;
+    }
+
+    .overlay .boton1{
+        transform: translateY(0);
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .sobrenosotros4{
+        padding: 0 30px;
+    }
+
+    .sobrenosotros4-content{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .sobrenosotros4-column{
+        padding: 0;
+    }
+
+    .sobrenosotros4-text h3{
+        text-align: center;
+    }
+
+    .overlay{
+        opacity: 1;
+    }
+
+    .overlay .boton1{
+        transform: translateY(0);
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .sobrenosotros4{
+        padding: 0 45px;
+    }
+
+    .sobrenosotros4-content{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .sobrenosotros4-column{
+        padding: 0 20px;
+    }
+
+    .sobrenosotros4-image img{
+        height: 300px;
+        object-fit: cover;
+    }
+}
 
 /* --------------------------------------- */
 
@@ -973,9 +2104,11 @@ span{
     gap: 15px;
     background-color: #DEE8FF;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 .admision3-column ul{
     padding-left: 20px;
+    line-height: 1.6;
 }
 .admision3-column li{
     padding: 5px 0;
@@ -985,6 +2118,84 @@ span{
 }
 .requisito-importante{
     color: #294B95;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .admision3{
+        padding: 0 20px;
+    }
+
+    .admision3-content{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .admision3-column{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .admision3-column h4{
+        font-size: 24px;
+    }
+
+    .admision3-column p{
+        font-size: 18px;
+    }
+
+    .admision3-column ul{
+        padding-left: 18px;
+    }
+
+    .admision3-column li{
+        font-size: 18px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .admision3{
+        padding: 0 30px;
+    }
+
+    .admision3-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .admision3-column{
+        width: 100%;
+        padding: 25px 30px;
+    }
+
+    .admision3-column h4{
+        text-align: center;
+    }
+
+    .admision3-column p{
+        text-align: center;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .admision3{
+        padding: 0 60px;
+    }
+
+    .admision3-content{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .admision3-column{
+        width: 50%;
+        padding: 25px 30px;
+    }
 }
 
 /* --------------------------------------- */
@@ -997,6 +2208,8 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f5f8ff;
+    padding: 30px 0;
 }
 .admision4-content{
     width: 100%;
@@ -1004,6 +2217,65 @@ span{
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .admision4{
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .admision4-content{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .admision4-content h4{
+        font-size: 18px;
+    }
+
+    .admision4-content .boton1{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .admision4{
+        padding: 0 30px;
+    }
+
+    .admision4-content{
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .admision4-content h4{
+        font-size: 18px;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .admision4{
+        padding: 0 45px;
+    }
+
+    .admision4-content{
+        flex-direction: row;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .admision4-content h4{
+        font-size: 20px;
+    }
 }
 
 /* --------------------------------------- */
@@ -1063,6 +2335,77 @@ span{
 }
 .admision5-titulo h6{
     color: #294B95;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .admision5{
+        padding: 0 20px;
+    }
+
+    .admision5-bloques{
+        flex-direction: column;
+        gap: 20px;
+        white-space: normal;
+    }
+
+    .admision5-bloque{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .admision5-bloque:hover{
+        transform: none;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .admision5{
+        padding: 0 30px;
+    }
+
+    .admision5-bloques{
+        flex-direction: column;
+        gap: 25px;
+        white-space: normal;
+    }
+
+    .admision5-bloque{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .admision5-bloques a{
+        font-size: 18px;
+    }
+
+    .admision5-bloque:hover{
+        transform: none;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .admision5{
+        padding: 0 60px;
+    }
+
+    .admision5-bloques{
+        flex-direction: row;
+        gap: 40px;
+        white-space: nowrap;
+    }
+
+    .admision5-bloque{
+        max-width: 350px;
+    }
+
+    .admision5-bloques a{
+        font-size: 1.1rem;
+    }
 }
 
 /* --------------------------------------- */
@@ -1143,6 +2486,162 @@ span{
 .niveles1-image:hover button {
     transform: translateY(0);
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .niveles1-content{
+        padding: 0 20px;
+        gap: 25px;
+    }
+
+    .niveles1-fila{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .niveles1-bloque{
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .niveles1-image{
+        height: auto;
+    }
+
+    .niveles1-image img{
+        height: auto;
+    }
+
+    /* overlay visible */
+    .overlay2{
+        opacity: 1;
+        background: rgba(0,0,0,0.4);
+    }
+
+    /* ===== MODAL ===== */
+
+    .niveles-card{
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .niveles-card-left{
+        height: 200px;
+    }
+
+    .niveles-card-left img{
+        object-fit: cover;
+    }
+
+    .niveles-card-right{
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .card-text1{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .niveles1-content{
+        padding: 0 30px;
+    }
+
+    .niveles1-fila{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .niveles1-bloque{
+        max-width: 500px;
+    }
+
+    .niveles1-image{
+        height: auto;
+    }
+
+    /* overlay visible */
+    .overlay2{
+        opacity: 1;
+        background: rgba(0,0,0,0.3);
+    }
+
+    /* ===== MODAL ===== */
+
+    .niveles-card{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .niveles-card-left{
+        height: 250px;
+    }
+
+    .niveles-card-left img{
+        object-fit: cover;
+    }
+
+    .niveles-card-right{
+        padding: 20px;
+    }
+
+    .card-text1{
+        width: 100%;
+    }
+}
+
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .niveles1-content{
+        padding: 0 45px;
+    }
+
+    .niveles1-fila{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .niveles1-bloque{
+        max-width: 450px;
+    }
+
+    .niveles1-image{
+        height: 300px;
+    }
+
+    .niveles1-image img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* modal ajustado */
+    .niveles-card{
+        width: 70%;
+        height: auto;
+    }
+
+    .niveles-card-left{
+        width: 50%;
+    }
+
+    .niveles-card-right{
+        width: 50%;
+        padding: 20px;
+    }
+}
 
 /* --------------------------------------- */
 
@@ -1187,6 +2686,82 @@ span{
     width: 400px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.comunidad2-images img:hover{
+    transform: scale(1.03);
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .comunidad2{
+        padding: 0 20px;
+    }
+
+    .comunidad2-content{
+        padding: 0;
+        gap: 20px;
+    }
+
+    .comunidad2-text{
+        align-items: center;
+        text-align: center;
+    }
+
+    .comunidad2-images{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comunidad2-images img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .comunidad2{
+        padding: 0 30px;
+    }
+
+    .comunidad2-content{
+        padding: 0;
+    }
+
+    .comunidad2-text{
+        align-items: center;
+        text-align: center;
+    }
+
+    .comunidad2-images{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .comunidad2-images img{
+        width: 45%;
+    }
+}
+
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .comunidad2{
+        padding: 0 45px;
+    }
+
+    .comunidad2-images{
+        gap: 25px;
+    }
+
+    .comunidad2-images img{
+        width: 32%;
+        max-width: 400px;
+    }
 }
 
 /* --------------------------------------- */
@@ -1210,6 +2785,10 @@ span{
     background-color: #DEE8FF;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     gap: 20px;
+    transition: transform 0.3s ease;
+}
+.comunidad3-card:hover{
+    transform: translateY(-5px);
 }
 .comunidad3-card p{
     text-align: justify;
@@ -1220,7 +2799,52 @@ span{
 .comunidad3-card span{
     color: #294B95;
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
 
+    .comunidad3-cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comunidad3-card{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .comunidad3-card h6{
+        font-size: 1rem;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .comunidad3-cards{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .comunidad3-card{
+        padding: 25px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .comunidad3-cards{
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .comunidad3-card{
+        padding: 30px;
+    }
+}
 /* --------------------------------------- */
 
 /* ---------- CONTACTO ---------- */
@@ -1260,7 +2884,67 @@ span{
 .contacto2-text h5{
     color: #294B95;
 }
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
 
+    .contacto2{
+        padding: 0 20px;
+    }
+
+    .contacto2-content{
+        gap: 20px;
+    }
+
+    .contacto2-text{
+        gap: 15px;
+        text-align: center;
+    }
+
+    .contacto2-text h5{
+        font-size: 1rem;
+    }
+
+    .contacto2-redes{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .contacto2{
+        padding: 0 30px;
+    }
+
+    .contacto2-text{
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contacto2-redes{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .contacto2{
+        padding: 0 45px;
+    }
+
+    .contacto2-text{
+        text-align: center;
+    }
+
+    .contacto2-redes{
+        flex-wrap: nowrap;
+    }
+}
 /* --------------------------------------- */
 
 /* ---------- EVENTOS 2 ---------- */
@@ -1284,6 +2968,36 @@ span{
 }
 .eventos2-content h3{
     color: #1F1863;
+}
+/* ================= MOBILE ================= */
+@media (min-width: 320px) and (max-width: 599px){
+
+    .eventos2-content{
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 600px) and (max-width: 1023px){
+
+    .eventos2-content{
+        padding: 0 30px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1024px) and (max-width: 1440px){
+
+    .eventos2-content{
+        padding: 0 15px;
+        text-align: left;
+        align-items: flex-start;
+    }
 }
 
 /* --------------------------------------- */
@@ -1395,7 +3109,118 @@ span{
 .expandido-image-final img {
     width: calc(33.33% - 7px);
 }
+@media (max-width: 599px) {
+    .eventos3-content {
+        align-items: center;
+    }
 
+    .eventos3-bloque {
+        width: 95%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .ebloque-text h4 {
+        font-size: 20px;
+    }
+
+    .ebloque-icon {
+        width: 15%;
+    }
+
+    .eventos3-expandido {
+        width: 95%;
+    }
+
+    .expandido-content {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .expandido-text {
+        gap: 12px;
+    }
+
+    .expandido-text h5 {
+        font-size: 16px;
+    }
+
+    .expandido-text p,
+    .expandido-text span,
+    .expandido-text ul li {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .expandido-image {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .expandido-image-final {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expandido-image-final img {
+        width: 100%;
+    }
+
+    .expandido-content img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .eventos3-content {
+        align-items: center;
+    }
+
+    .eventos3-bloque {
+        width: 92%;
+    }
+
+    .eventos3-expandido {
+        width: 92%;
+    }
+
+    .expandido-content {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .expandido-image {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .expandido-image-final {
+        justify-content: center;
+    }
+
+    .expandido-image-final img {
+        width: calc(33.33% - 7px);
+    }
+
+    .expandido-content img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .eventos3-content {
+        align-items: flex-start;
+    }
+
+    .eventos3-bloque,
+    .eventos3-expandido {
+        width: 90%;
+    }
+
+    .expandido-image {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* --------------------------------------- */
 
 /* ---------- GALERIA 3 ---------- */
@@ -1483,18 +3308,89 @@ span{
     margin-top: 40px;
     margin-bottom: 25px;
 }
+@media (max-width: 599px) {
 
-@media (max-width: 768px) {
-    .slide {
-        min-width: calc(100% / 2);
+    .slider1-titulo p {
+        width: 95%;
+        font-size: 18px;
+        text-align: justify;
+        text-align-last: center;
     }
-}
 
-@media (max-width: 480px) {
+    .slider {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
     .slide {
         min-width: 100%;
     }
+
+    .slide img {
+        height: 200px;
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
 }
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .slider1-titulo p {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .slider {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .slide {
+        min-width: calc(100% / 2);
+    }
+
+    .slide img {
+        height: 230px;
+    }
+
+    .prev {
+        left: -20px;
+    }
+
+    .next {
+        right: -20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .slider {
+        max-width: 1000px;
+    }
+
+    .slide {
+        min-width: calc(100% / 3);
+    }
+
+    .slide img {
+        height: 250px;
+    }
+
+    .prev {
+        left: -50px;
+    }
+
+    .next {
+        right: -50px;
+    }
+}
+
 
 /* --------------------------------------- */
 

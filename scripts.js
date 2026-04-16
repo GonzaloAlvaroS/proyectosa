@@ -218,3 +218,25 @@ document.querySelectorAll(".slider").forEach(slider => {
     window.addEventListener("resize", updateSlider);
 
 });
+
+///////////////////////////////////////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("navbar-toggle");
+    const links = document.getElementById("navbar-links");
+    const icon = toggle.querySelector("i");
+
+    if (toggle && links) {
+        toggle.addEventListener("click", () => {
+            links.classList.toggle("active");
+
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-xmark");
+        });
+    }
+    links.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        links.classList.remove("active");
+    });
+});
+});
