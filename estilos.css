@@ -215,7 +215,7 @@ span{
     }
 
     .navbar-logo h5{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .navbar-links{
@@ -228,7 +228,6 @@ span{
         align-items: center;
         gap: 15px;
         padding: 20px 0;
-
         display: none;
         z-index: 999;
     }
@@ -255,7 +254,7 @@ span{
 
     .navbar-links a{
         padding: 12px 10px;
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
@@ -292,6 +291,7 @@ span{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
 .boton-contacto-redes{
     width: 50px;
@@ -306,7 +306,7 @@ span{
     text-decoration: none;
     transition: transform 0.3s ease;
 }
-.boton-contacto-redes:hover{
+.boton-contacto-redes:hover, .boton-redes:hover{
     transform: translateY(-5px);
 }
 
@@ -453,15 +453,15 @@ span{
     }
 
     .section1-content h1{
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .section1-content h5{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .section1-content a{
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px 15px;
     }
 }
@@ -476,15 +476,15 @@ span{
     }
 
     .section1-content h1{
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .section1-content h5{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .section1-content a{
-        font-size: 15px;
+        font-size: 18px;
         padding: 12px 18px;
     }
 }
@@ -591,10 +591,15 @@ span{
 
     .section2-text h5{
         font-size: 20px;
+        text-align: left;
     }
 
     .section2-text p{
         font-size: 18px;
+    }
+    
+    .section2-text a{
+        text-align: left;
     }
 
     .link-document{
@@ -637,11 +642,11 @@ span{
     }
 
     .section2-text h5{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .section2-text p{
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -718,7 +723,6 @@ span{
     .section3-content{
         width: 100%;
         padding: 15px;
-
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
@@ -747,7 +751,6 @@ span{
 
     .section3-content{
         width: 100%;
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -776,11 +779,10 @@ span{
 
     .section3-content{
         width: 90%;
-        gap: 10px;
     }
 
     .section3-valor img{
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -861,6 +863,10 @@ span{
         order: 2;
     }
 
+    .section4-text h6, .section4-text a{
+        text-align: left;
+    }
+
     .section4-text p{
         font-size: 18px;
     }
@@ -883,7 +889,7 @@ span{
     }
 
     .section4-botones a{
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
 }
@@ -907,7 +913,7 @@ span{
     }
 
     .section4-text p{
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .section4-image{
@@ -1140,7 +1146,7 @@ span{
 
     .section6-content p{
         width: 90%;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .section6-titulo h2{
@@ -1351,7 +1357,7 @@ span{
     }
 
     .section8-telefono h6{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -1636,7 +1642,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 35px;
 }
 .sobrenosotros2-image{
@@ -1658,115 +1664,116 @@ span{
     padding: 0 45px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
 }
 .sobrenosotros2-text p{
     text-align: justify;
-    text-align-last: center;
 }
 .sobrenosotros2-text h2{
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-/* ================= MOBILE ================= */
-@media (min-width: 320px) and (max-width: 599px){
 
-    .sobrenosotros2{
-        padding: 0 20px;
+@media (max-width: 599px) {
+
+    .sobrenosotros2 {
+        margin: 30px 0;
+        padding: 0 15px;
     }
 
-    .sobrenosotros2-content{
+    .sobrenosotros2-content {
+        flex-direction: column;
         padding: 0;
         gap: 25px;
     }
 
-    .sobrenosotros2-text,
-    .sobrenosotros2-image{
+    .sobrenosotros2-text {
         padding: 0;
+        gap: 15px;
+        align-items: center;
     }
 
-    .sobrenosotros2-image img{
+    .sobrenosotros2-text p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .sobrenosotros2-image {
+        padding: 0;
+        gap: 0;
+    }
+
+    .sobrenosotros2-image img {
         width: 100%;
         height: auto;
-    }
-
-    .sobrenosotros2-text h2{
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .sobrenosotros2-text p{
-        text-align: justify;
-        text-align-last: left;
-        font-size: 18px;
+        max-height: 300px;
+        object-fit: cover;
     }
 }
 
-/* ================= TABLET ================= */
-@media (min-width: 600px) and (max-width: 1023px){
+@media (min-width: 600px) and (max-width: 1023px) {
 
-    .sobrenosotros2{
-        padding: 0 30px;
+    .sobrenosotros2 {
+        padding: 0 25px;
     }
 
-    .sobrenosotros2-content{
+    .sobrenosotros2-content {
+        flex-direction: column;
         padding: 0;
         gap: 30px;
     }
 
-    .sobrenosotros2-text,
-    .sobrenosotros2-image{
+    .sobrenosotros2-text {
         padding: 0;
     }
 
-    .sobrenosotros2-image img{
+    .sobrenosotros2-image {
+        padding: 0;
+    }
+
+    .sobrenosotros2-image img {
         width: 100%;
-        max-width: 600px;
         height: auto;
-    }
-
-    .sobrenosotros2-text h2{
-        text-align: center;
-    }
-
-    .sobrenosotros2-text p{
-        text-align-last: left;
+        max-height: 380px;
+        object-fit: cover;
     }
 }
 
-/* ================= DESKTOP ================= */
-@media (min-width: 1024px) and (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 1440px) {
 
-    .sobrenosotros2-content{
+    .sobrenosotros2 {
+        padding: 0 30px;
+    }
+
+    .sobrenosotros2-content {
         flex-direction: row;
+        gap: 40px;
         align-items: center;
     }
 
-    .sobrenosotros2-text{
-        width: 50%;
-        padding: 0 20px;
-        align-items: flex-start;
+    .sobrenosotros2-text {
+        padding: 0;
+        flex: 1;
     }
 
-    .sobrenosotros2-image{
-        width: 50%;
-        padding: 0 20px;
+    .sobrenosotros2-text p {
+        font-size: 16px;
+        line-height: 1.6;
     }
 
-    .sobrenosotros2-image img{
+    .sobrenosotros2-image {
+        padding: 0;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .sobrenosotros2-image img {
         width: 100%;
-        height: 400px;
+        max-width: 520px;
+        height: 360px;
         object-fit: cover;
-        display: block;
-    }
-
-    .sobrenosotros2-text h2{
-        text-align: left;
-    }
-
-    .sobrenosotros2-text p{
-        text-align-last: left;
+        border-radius: 10px;
     }
 }
 /* --------------------------------------- */
@@ -1862,7 +1869,7 @@ span{
 
     .row-text p{
         text-align: justify;
-        text-align-last: left;
+        text-align-last: center;
         font-size: 18px;
     }
 }
@@ -1874,6 +1881,7 @@ span{
         flex-direction: column;
         padding: 30px;
         gap: 25px;
+        box-sizing: border-box;
     }
 
     .row-text{
@@ -1894,7 +1902,7 @@ span{
     }
 
     .row-text p{
-        text-align-last: left;
+        text-align-last: center;
     }
 }
 
@@ -2169,14 +2177,15 @@ span{
     .admision3-column{
         width: 100%;
         padding: 25px 30px;
+        box-sizing: border-box;
     }
 
     .admision3-column h4{
-        text-align: center;
+        text-align: left;
     }
 
     .admision3-column p{
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -2246,7 +2255,8 @@ span{
 @media (min-width: 600px) and (max-width: 1023px){
 
     .admision4{
-        padding: 0 30px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .admision4-content{
@@ -2264,7 +2274,8 @@ span{
 @media (min-width: 1024px) and (max-width: 1440px){
 
     .admision4{
-        padding: 0 45px;
+        padding: 25px;
+        box-sizing: border-box;
     }
 
     .admision4-content{
@@ -2486,7 +2497,7 @@ span{
 .niveles1-image:hover button {
     transform: translateY(0);
 }
-/* ================= MOBILE ================= */
+
 @media (min-width: 320px) and (max-width: 599px){
 
     .niveles1-content{
@@ -2512,7 +2523,6 @@ span{
         height: auto;
     }
 
-    /* overlay visible */
     .overlay2{
         opacity: 1;
         background: rgba(0,0,0,0.4);
@@ -2521,34 +2531,45 @@ span{
     /* ===== MODAL ===== */
 
     .niveles-card{
-        width: 95%;
+        width: 85%;
+        max-width: 300px;
+        border-radius: 10px;
         height: auto;
         flex-direction: column;
-        max-height: 90vh;
-        overflow-y: auto;
+        max-height: 90vh;;
     }
 
     .niveles-card-left{
-        height: 200px;
-    }
-
-    .niveles-card-left img{
-        object-fit: cover;
+        display: none !important;
     }
 
     .niveles-card-right{
-        padding: 20px;
-        gap: 10px;
+        width: 100% !important;   
+        gap: 8px;
     }
 
     .card-text1{
         width: 100%;
-        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .niveles-card-right h3{
+        font-size: 24px;
+    }
+
+    .card-text1 h5{
+        font-size: 20px;
+    }
+
+    .card-text1 li{
+        font-size: 18px;
+    }
+    .niveles-card-right a{
+        white-space: nowrap;
     }
 }
-
-
-/* ================= TABLET ================= */
 @media (min-width: 600px) and (max-width: 1023px){
 
     .niveles1-content{
@@ -2568,7 +2589,6 @@ span{
         height: auto;
     }
 
-    /* overlay visible */
     .overlay2{
         opacity: 1;
         background: rgba(0,0,0,0.3);
@@ -2577,30 +2597,39 @@ span{
     /* ===== MODAL ===== */
 
     .niveles-card{
-        width: 90%;
+        width: 70%;
+        max-width: 350px;
+        border-radius: 12px;
         height: auto;
         flex-direction: column;
         max-height: 90vh;
-        overflow-y: auto;
     }
 
     .niveles-card-left{
-        height: 250px;
-    }
-
-    .niveles-card-left img{
-        object-fit: cover;
+        display: none !important;
     }
 
     .niveles-card-right{
+        width: 100% !important;
         padding: 20px;
     }
 
     .card-text1{
         width: 100%;
     }
-}
 
+    .niveles-card-right h3{
+        font-size: 25px;
+    }
+
+    .card-text1 h5{
+        font-size: 20px;
+    }
+
+    .card-text1 li{
+        font-size: 18px;
+    }
+}
 
 /* ================= DESKTOP ================= */
 @media (min-width: 1024px) and (max-width: 1440px){
@@ -2817,7 +2846,6 @@ span{
     }
 }
 
-
 /* ================= TABLET ================= */
 @media (min-width: 600px) and (max-width: 1023px){
 
@@ -3031,6 +3059,7 @@ span{
     background-color: #DEE8FF;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 8px 8px 0;
+    cursor: pointer;
 }
 .ebloque-text{
     width: 90%;
@@ -3367,11 +3396,26 @@ span{
         right: -20px;
     }
 }
+@media (min-width: 1023px) and (max-width: 1170px){
 
+    .slider{
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .prev{
+        left: -10px !important;
+    }
+
+    .next{
+        right: -10px !important;
+    }
+}
 @media (min-width: 1024px) and (max-width: 1440px) {
 
     .slider {
         max-width: 1000px;
+        padding: 0 35px;
     }
 
     .slide {
@@ -3383,14 +3427,13 @@ span{
     }
 
     .prev {
-        left: -50px;
+        left: -40px;
     }
 
     .next {
-        right: -50px;
+        right: -40px;
     }
 }
-
 
 /* --------------------------------------- */
 
@@ -3418,8 +3461,10 @@ span{
 }
 .niveles-card {
     background-color: #DEE8FF;
-    width: 60%;
-    height: 480px;
+    width: 70%;
+    max-width: 900px;
+    max-height: 90vh;
+    height: auto;
     display: flex;
     border-radius: 12px;
     overflow: hidden;
@@ -3428,14 +3473,15 @@ span{
     transition: transform .3s ease, opacity .3s ease;
 }
 .niveles-card-left{
-    width: 100%;
+    width: 50%;
+    display: flex;
 }
 .niveles-card-left img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .niveles-card-right{
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
