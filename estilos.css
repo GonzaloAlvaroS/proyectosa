@@ -1085,7 +1085,7 @@ span{
     flex-direction: column;
     box-sizing: border-box;
     background-color: #DEE8FF;
-    background: linear-gradient(rgba(43, 43, 43, 0.7),rgba(37, 37, 37, 0.7)), url(media/imagen2.jpeg) center center;
+    background: linear-gradient(rgba(43, 43, 43, 0.7),rgba(37, 37, 37, 0.7)), url(media/imagen2.webp) center center;
     background-size: cover;
     background-attachment: fixed;
 }

@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const hero = document.getElementById("hero");
 
   const images = [
-    "media/fondo1.jpg",
-    "media/fondo2.jpg",
-    "media/imagen7.jpg"
+    "media/fondo1.webp",
+    "media/fondo2.webp",
+    "media/imagen7.webp"
   ];
 
   let currentIndex = 0;
