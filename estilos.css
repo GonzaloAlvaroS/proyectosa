@@ -1912,6 +1912,7 @@ span{
     .sobrenosotros3-row{
         flex-direction: row;
         padding: 20px 40px;
+        box-sizing: border-box;
     }
 
     .row-text{
@@ -3378,6 +3379,7 @@ span{
     .slider {
         max-width: 100%;
         padding: 0 20px;
+        overflow: hidden;
     }
 
     .slide {
